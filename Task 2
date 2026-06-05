@@ -1,0 +1,14 @@
+# stock prices
+prices = {"AAPL": 180, "TSLA": 250 ,"MSFT": 320,
+    "GOOGL": 140
+}
+
+# Ask user for input
+stock = input("Enter stock symbol (AAPL/TSLA/MSFT/GOOGL): ").upper()
+qty = int(input("Enter quantity: "))
+
+# Calculate value
+value = prices[stock] * qty
+
+# Show result
+print(f"Total investment in {stock}: ${value}")
